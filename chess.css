@@ -1,0 +1,23 @@
+.board {
+    border: 10px groove gray;
+    position: absolute;
+}
+
+.board > div {
+    clear: left;
+}
+
+.board div div{
+    width: 41px;
+    height: 41px;
+    border: 1px solid black;
+    float: left;
+}
+
+.board div:nth-child(odd) div:nth-child(even), .board div:nth-child(even) div:nth-child(odd) {
+    background-color: #FF7F37;
+}
+
+.pickUp {
+    background-color: yellow !important;
+}
