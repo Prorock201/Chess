@@ -21,3 +21,8 @@
 .pickUp {
     background-color: yellow !important;
 }
+
+#example {
+    float: right;
+    position: relative;
+}
