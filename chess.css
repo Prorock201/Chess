@@ -1,13 +1,35 @@
+body {
+    background-color: #F3E0FF;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.content {
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.content-board, .image {
+    float: left;
+}
+
+.image {
+    padding-top: 140px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .board {
     border: 10px groove gray;
-    position: absolute;
+    float: left;
 }
 
 .board > div {
     clear: left;
 }
 
-.board div div{
+.row div {
     width: 41px;
     height: 41px;
     border: 1px solid black;
@@ -15,7 +37,8 @@
 }
 
 .board div:nth-child(odd) div:nth-child(even), .board div:nth-child(even) div:nth-child(odd) {
-    background-color: #FF7F37;
+    background-color: #7F0037;
+    /*#CC5F0C*/
 }
 
 .pickUp {
@@ -25,4 +48,35 @@
 #example {
     float: right;
     position: relative;
+}
+
+.frame1, .frame4 {
+    width: 344px;
+    height: 43px;
+    padding: 10px;
+    margin-left: 63px;
+}
+
+.frame2, .frame3 {
+    width: 43px;
+    height: 344px;
+    padding: 10px;
+    float: left;
+}
+
+.frame4 {
+    clear: left;
+}
+
+.frame1 div, .frame2 div, .frame3 div, .frame4 div {
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    font-size: 18pt;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.frame1 div, .frame4 div {
+    float: left;
 }

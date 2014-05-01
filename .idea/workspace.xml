@@ -22,73 +22,132 @@
     <favorites_list name="10. Chess" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="32" selection-start="5192" selection-end="5192" vertical-scroll-proportion="1.3681507" vertical-offset="1377" max-vertical-offset="3077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="board.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/board.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="81" selection-end="81" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cell.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cell.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="piece.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/piece.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lodash.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/lodash.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6782" column="19" selection-start="261419" selection-end="261419" vertical-scroll-proportion="0.0" vertical-offset="114752" max-vertical-offset="115430">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chess.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chess.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="17" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chess.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chess.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="96" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2312">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.43238994">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="chess.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/chess.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="20" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="39" selection-start="473" selection-end="473" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="lodash.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/lodash.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6782" column="19" selection-start="261419" selection-end="261419" vertical-scroll-proportion="0.0" vertical-offset="115294" max-vertical-offset="115430">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="chess.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/chess.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="14" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2312">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="306" column="64" selection-start="8782" selection-end="8782" vertical-scroll-proportion="7.818548" vertical-offset="781" max-vertical-offset="3077">
+                  <folding>
+                    <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="false" signature="1805:6104" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
+                    <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
+                    <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
+                    <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
+                    <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
+                    <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
+                    <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
+                    <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
+                    <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
+                    <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
+                    <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
+                    <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="require.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/require.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2067" column="9" selection-start="82266" selection-end="82266" vertical-scroll-proportion="0.0" vertical-offset="35139" max-vertical-offset="35241">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="text_require.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/text_require.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="385" column="3" selection-start="15349" selection-end="15349" vertical-scroll-proportion="0.0" vertical-offset="6545" max-vertical-offset="6647">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="29" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="312" column="25" selection-start="8870" selection-end="8870" vertical-scroll-proportion="14.460366" vertical-offset="408" max-vertical-offset="5406">
+                  <folding>
+                    <element signature="e#182#346#0" expanded="false" />
+                    <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="true" signature="1805:6104" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
+                    <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
+                    <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
+                    <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
+                    <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
+                    <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
+                    <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
+                    <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
+                    <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
+                    <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
+                    <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
+                    <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
+                    <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -98,13 +157,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/chess.css" />
         <option value="$PROJECT_DIR$/chess.js" />
         <option value="$PROJECT_DIR$/chess.html" />
         <option value="$PROJECT_DIR$/templates/board.html" />
-        <option value="$PROJECT_DIR$/templates/cell.html" />
         <option value="$PROJECT_DIR$/templates/piece.html" />
         <option value="$PROJECT_DIR$/libs/lodash.js" />
+        <option value="$PROJECT_DIR$/templates/cell.html" />
+        <option value="$PROJECT_DIR$/libs/require.js" />
+        <option value="$PROJECT_DIR$/libs/text_require.js" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/../12. Chat/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/chess.css" />
+        <option value="$PROJECT_DIR$/views/main.js" />
       </list>
     </option>
   </component>
@@ -168,7 +234,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -193,9 +259,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Мишка\Документы\Веб\Мои работы\10. Chess\libs" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -270,15 +341,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13683373" sideWeight="0.672956" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16070008" sideWeight="0.672956" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -300,31 +371,35 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chess.css">
+    <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="476">
+        <state line="8" column="29" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="272">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess.js">
+    <entry file="file://$PROJECT_DIR$/views/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chess.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="476">
-          <folding />
+        <state line="25" column="13" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1139">
+          <folding>
+            <element signature="e#182#346#0" expanded="false" />
+            <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="1805:6104" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
+            <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
+            <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
+            <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
+            <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
+            <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
+            <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
+            <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
+            <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
+            <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
+            <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
+            <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -344,9 +419,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chess.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chess.js">
@@ -361,37 +434,16 @@
         <state line="1648" column="2" selection-start="26884" selection-end="26884" vertical-scroll-proportion="0.30491802" vertical-offset="27830" max-vertical-offset="64651" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess.css">
+    <entry file="file://$PROJECT_DIR$/libs/require.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+        <state line="2067" column="9" selection-start="82266" selection-end="82266" vertical-scroll-proportion="0.0" vertical-offset="34925" max-vertical-offset="35241">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess.js">
+    <entry file="file://$PROJECT_DIR$/libs/text_require.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="96" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/board.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="81" selection-end="81" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cell.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/piece.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
+        <state line="385" column="3" selection-start="15349" selection-end="15349" vertical-scroll-proportion="0.0" vertical-offset="6331" max-vertical-offset="6647">
           <folding />
         </state>
       </provider>
@@ -399,16 +451,65 @@
     <entry file="file://$PROJECT_DIR$/libs/lodash.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6782" column="19" selection-start="261419" selection-end="261419" vertical-scroll-proportion="0.0" vertical-offset="114752" max-vertical-offset="115430">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chess.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../12. Chat/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.22972973" vertical-offset="51" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chess.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="32" selection-start="5192" selection-end="5192" vertical-scroll-proportion="1.3681507" vertical-offset="1377" max-vertical-offset="3077">
+        <state line="12" column="39" selection-start="473" selection-end="473" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="312" column="25" selection-start="8870" selection-end="8870" vertical-scroll-proportion="14.460366" vertical-offset="408" max-vertical-offset="5406">
+          <folding>
+            <element signature="e#182#346#0" expanded="false" />
+            <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="1805:6104" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
+            <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
+            <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
+            <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
+            <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
+            <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
+            <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
+            <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
+            <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
+            <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
+            <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
+            <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
+            <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
