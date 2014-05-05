@@ -5,8 +5,16 @@ body {
     cursor: default;
 }
 
+.info {
+    height: 32px;
+    text-align: center;
+    padding: 50px;
+    font-family: Verdana;
+    font-size: 20pt;
+    color: #7F0037;
+}
+
 .content {
-    margin-top: 100px;
     margin-left: 250px;
 }
 
@@ -22,6 +30,7 @@ body {
 
 .board {
     border: 10px groove gray;
+    background-color: white;
     float: left;
 }
 

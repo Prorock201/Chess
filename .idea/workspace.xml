@@ -28,7 +28,7 @@
           <file leaf-file-name="chess.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/chess.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="20" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+                <state line="8" column="17" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
                   <folding />
                 </state>
               </provider>
@@ -37,7 +37,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="39" selection-start="473" selection-end="473" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+                <state line="11" column="26" selection-start="429" selection-end="429" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="442">
                   <folding />
                 </state>
               </provider>
@@ -55,33 +55,18 @@
           <file leaf-file-name="chess.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/chess.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="14" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2312">
+                <state line="62" column="25" selection-start="983" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="2312">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="306" column="64" selection-start="8782" selection-end="8782" vertical-scroll-proportion="7.818548" vertical-offset="781" max-vertical-offset="3077">
+                <state line="54" column="37" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.6169355" vertical-offset="765" max-vertical-offset="4981">
                   <folding>
-                    <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="false" signature="1805:6104" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
-                    <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
-                    <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
-                    <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
-                    <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
-                    <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
-                    <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
-                    <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
-                    <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
-                    <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
-                    <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
-                    <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+                    <marker date="1399287853984" expanded="true" signature="448:535" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -118,28 +103,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="312" column="25" selection-start="8870" selection-end="8870" vertical-scroll-proportion="14.460366" vertical-offset="408" max-vertical-offset="5406">
+                <state line="225" column="0" selection-start="6929" selection-end="6929" vertical-scroll-proportion="0.47256097" vertical-offset="3670" max-vertical-offset="4981">
                   <folding>
-                    <element signature="e#182#346#0" expanded="false" />
-                    <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="true" signature="1805:6104" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
-                    <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
-                    <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
-                    <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
-                    <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
-                    <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
-                    <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
-                    <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
-                    <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
-                    <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
-                    <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
-                    <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
-                    <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+                    <marker date="1399287853984" expanded="true" signature="448:535" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -206,6 +175,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,7 +224,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,14 +238,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -287,15 +248,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -338,7 +307,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="783" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -382,23 +351,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="13" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1139">
           <folding>
-            <element signature="e#182#346#0" expanded="false" />
-            <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="1805:6104" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
-            <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
-            <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
-            <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
-            <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
-            <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
-            <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
-            <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
-            <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
-            <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
-            <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
-            <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+            <marker date="1399287853984" expanded="true" signature="448:535" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -429,11 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1648" column="2" selection-start="26884" selection-end="26884" vertical-scroll-proportion="0.30491802" vertical-offset="27830" max-vertical-offset="64651" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/require.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2067" column="9" selection-start="82266" selection-end="82266" vertical-scroll-proportion="0.0" vertical-offset="34925" max-vertical-offset="35241">
@@ -455,13 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="29" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="272">
@@ -474,41 +415,39 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.22972973" vertical-offset="51" max-vertical-offset="510" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chess.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="25" selection-start="983" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="2312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="998" column="0" selection-start="15758" selection-end="15758" vertical-scroll-proportion="0.33231708" vertical-offset="16857" max-vertical-offset="64651">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chess.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+        <state line="8" column="17" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="473" selection-end="473" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+        <state line="11" column="26" selection-start="429" selection-end="429" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="25" selection-start="8870" selection-end="8870" vertical-scroll-proportion="14.460366" vertical-offset="408" max-vertical-offset="5406">
+        <state line="54" column="37" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.6169355" vertical-offset="765" max-vertical-offset="4981">
           <folding>
-            <element signature="e#182#346#0" expanded="false" />
-            <marker date="1398936665234" expanded="true" signature="373:460" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="1805:6104" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="1878:6100" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="1905:6094" placeholder="{...}" />
-            <marker date="1398936665234" expanded="true" signature="2013:2213" placeholder="{&quot;name&quot;: 'rock'...}" />
-            <marker date="1398936665234" expanded="true" signature="2345:2547" placeholder="{&quot;name&quot;: 'knight'...}" />
-            <marker date="1398936665234" expanded="true" signature="2679:2881" placeholder="{&quot;name&quot;: 'bishop'...}" />
-            <marker date="1398936665234" expanded="true" signature="2990:3191" placeholder="{&quot;name&quot;: 'queen'...}" />
-            <marker date="1398936665234" expanded="true" signature="3300:3500" placeholder="{&quot;name&quot;: 'king'...}" />
-            <marker date="1398936665234" expanded="true" signature="3770:3970" placeholder="{&quot;name&quot;: 'pawn'...}" />
-            <marker date="1398936665234" expanded="true" signature="4102:4302" placeholder="{&quot;name&quot;: 'rock'...}" />
-            <marker date="1398936665234" expanded="true" signature="4434:4636" placeholder="{&quot;name&quot;: 'knight'...}" />
-            <marker date="1398936665234" expanded="true" signature="4768:4970" placeholder="{&quot;name&quot;: 'bishop'...}" />
-            <marker date="1398936665234" expanded="true" signature="5079:5280" placeholder="{&quot;name&quot;: 'queen'...}" />
-            <marker date="1398936665234" expanded="true" signature="5389:5589" placeholder="{&quot;name&quot;: 'king'...}" />
-            <marker date="1398936665234" expanded="true" signature="5859:6059" placeholder="{&quot;name&quot;: 'pawn'...}" />
+            <marker date="1399287853984" expanded="true" signature="448:535" placeholder="{...}" />
           </folding>
         </state>
       </provider>
