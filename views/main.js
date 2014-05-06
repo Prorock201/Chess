@@ -4,6 +4,7 @@ var Img = '';
 var Turn = 'white';
 var Obj = '';
 var CurrentPosition = '';
+var CurrentCell = '';
 
 var Desk = {
     x: [],
@@ -14,23 +15,6 @@ var Game = {
     cells: [],
     pieces: []
 };
-
-var Cell = {
-    coordinates: ['a', 1],
-    isOccupied: false
-};
-
-/*var Piece = {
-    name: 'sample',
-    color: 0,
-    availableGoes: [],
-    position: [],
-    id: 0,
-    move: function() {
-        console.log('move');
-    }
-};*/
-
 
 function startNewGame() {
     initializeBoard();
@@ -43,38 +27,6 @@ function startNewGame() {
     drawFrame(false, true, 4);
 
     $('.row div').on('click', checkMoves);
-
-    /*$('.row img').draggable({containment:'.board'},{cursor:"auto",cursorAt:{left:20,top:20}});*/
-
-    /*$('.row div').on('mousedown', function(event) {
-        var piece;
-        var img;
-        if ($(event.currentTarget).children().is('img')) {
-            img = $(event.currentTarget);
-            currentPosition = $(event.currentTarget).attr('class');
-            $.each(Game.pieces, function(index, element) {
-                if (currentPosition == this.positionX + this.positionY) {
-                    piece = element;
-                }
-            });
-        } else {
-            console.log('No');
-        }
-        console.log(piece);
-
-        $('.row div').mouseover(function(event3) {
-            console.log(event3.currentTarget);
-        });
-
-        $('.row div').mouseup(function(event2) {
-            var newX;
-            var newY;
-            console.log($(img).attr('class'));
-            if (piece) {
-            }
-            piece = null;
-        });
-    });*/
 }
 
 function initializeBoard() {
@@ -132,7 +84,7 @@ function initializePieces() {
             case 'a1':
             case 'h1':
                 counter++;
-                Game.pieces.push(new Piece('rock', 'black', element.x, element.y, 'br', counter));
+                Game.pieces.push(new Piece('rook', 'black', element.x, element.y, 'br', counter));
                 element.isOccupied = true;
                 element.occupiedColor = 'black';
                 break;
@@ -178,7 +130,7 @@ function initializePieces() {
             case 'a8':
             case 'h8':
                 counter++;
-                Game.pieces.push(new Piece('rock', 'white', element.x, element.y, 'wr', counter));
+                Game.pieces.push(new Piece('rook', 'white', element.x, element.y, 'wr', counter));
                 element.isOccupied = true;
                 element.occupiedColor = 'black';
                 break;
@@ -235,53 +187,226 @@ function renderPieces() {
 }
 
 function checkMoves(event) {
-    if ($(event.currentTarget).children().is('img')) {
+    if (Obj) {
         CurrentPosition = $(event.currentTarget).attr('class');
-        Img = $(event.currentTarget).find('img').clone();
-        $('.row div').each(function(index, element) {
-            if ($(element).hasClass('pickUp')) {
-                $(element).removeClass('pickUp');
-            }
-            $(event.currentTarget).addClass('pickUp');
-        });
-        $.each(Game.pieces, function(index, element) {
-            if (CurrentPosition == this.positionX + this.positionY) {
-                Obj = element;
-            }
-        });
-        console.log(CurrentPosition);
-        console.log(Obj);
-    } else {
-        CurrentPosition = $(event.currentTarget).attr('class');
+        var oldX = Obj.positionX;
+        var oldY = Obj.positionY;
         var newX = CurrentPosition.substring(0,1);
-        var newY = CurrentPosition.substring(1,2);
+        var newY = parseInt(CurrentPosition.substring(1,2));
         if (Img) {
             if (Obj.color == Turn) {
                 if (validMove(newX, newY, Obj)) {
+                    console.log('Yes');
+                    var found = isOccupied(newX, newY);
+                    var deletePiece;
+                    if (found) {
+                        $('.' + found.positionX + found.positionY).contents().remove();
+                        $.each(Game.pieces, function(index, element) {
+                            if (found.id == element.id) {
+                                deletePiece = index;
+                            }
+                        });
+                        Game.pieces.splice(deletePiece, 1);
+                    }
                     Obj.positionX = newX;
                     Obj.positionY = newY;
-                    $(event.currentTarget).append(Img);
-                    $('.row div').each(function(index, element) {
-                        if ($(element).hasClass('pickUp')) {
-                            $(element).removeClass('pickUp');
-                            $(element).contents().remove();
+                    if (isInCheck(Obj)) {
+                        $('.info').text('Cannot move there...You would be in check.');
+                        Obj.positionX = oldX;
+                        Obj.positionY = oldY;
+                    } else {
+                        $('.info').text('Move ' + Obj.color + ' ' + Obj.name + ' to ' + newX + newY);
+                        $(event.currentTarget).append(Img);
+                        $('.row div').each(function(index, element) {
+                            if ($(element).hasClass('pickUp')) {
+                                $(element).removeClass('pickUp');
+                                $(element).contents().remove();
+                            }
+                        });
+                        if (Turn == 'white') {
+                            Turn = 'black';
+                        } else {
+                            Turn = 'white';
                         }
-                    });
-                    Img = null;
-                }
-                if (Turn == 'white') {
-                    Turn = 'black';
+                    }
                 } else {
-                    Turn = 'white';
+                    $('.info').text('Illegal move..Please try again.');
                 }
-                $('.info').text('');
             } else {
                 $('.info').text('It is ' + Turn + ' turn.');
             }
+            Img = null;
+        }
+        $(CurrentCell).removeClass('pickUp');
+        Obj = null;
+    } else {
+        if ($(event.currentTarget).children().is('img')) {
+            CurrentPosition = $(event.currentTarget).attr('class');
+            Img = $(event.currentTarget).find('img').clone();
+            $('.row div').each(function(index, element) {
+                if ($(element).hasClass('pickUp')) {
+                    $(element).removeClass('pickUp');
+                }
+                CurrentCell = event.currentTarget;
+                $(CurrentCell).addClass('pickUp');
+            });
+            $.each(Game.pieces, function(index, element) {
+                if (CurrentPosition == this.positionX + this.positionY) {
+                    Obj = element;
+                }
+            });
         }
     }
 }
 
 function validMove(x, y, obj) {
-    return true;
+    var found = isOccupied(x, y);
+    if (found.color == obj.color) {
+        return false;
+    } else if (obj.name == 'rook') {
+        return rookMove(x, y, obj) && clear(x, y, obj);
+    } else if (obj.name == 'knight') {
+        return knightMove(x, y, obj);
+    } else if (obj.name == 'bishop') {
+        return bishopMove(x, y, obj) && clear(x, y, obj);
+    } else if (obj.name == 'queen') {
+        return queenMove(x, y, obj) && clear(x, y, obj);
+    } else if (obj.name == 'king') {
+        return kingMove(x, y, obj) && clear(x, y, obj);
+    } else if (obj.name == 'pawn') {
+        return pawnMove(x, y, obj);
+    } else {
+        $('.info').text('Unknown type: ' + obj.name);
+    }
+}
+
+function isOccupied(x, y) {
+    var found = false;
+    if (typeof(x) == 'number') {
+        x = indexToFile(x);
+    }
+    $.each(Game.pieces, function(index, element) {
+        if (this.positionX == x && this.positionY == y) {
+            found = element;
+        }
+    });
+    return found;
+}
+
+function fileToIndex(x) {
+    var num;
+    $(Desk.x).each(function(index, element){
+        if (x == element) {
+            num = index + 1;
+        }
+    });
+    return num;
+}
+
+function indexToFile(x) {
+    var letter;
+    $(Desk.x).each(function(index, element){
+        if (x == index + 1) {
+            letter = element;
+        }
+    });
+    return letter;
+}
+
+function clear(x, y, obj) {
+    var xSet = 0;
+    var ySet = 0;
+    var NewX;
+    var NewY;
+    var fileX = fileToIndex(x);
+    var fileObj = fileToIndex(obj.positionX);
+    var found = false;
+    if (fileX == fileObj) {
+        if (y > obj.positionY) {
+            ySet = 1;
+        } else {
+            ySet = -1;
+        }
+    } else if (y == obj.positionY) {
+        if (fileX > fileObj) {
+            xSet = 1;
+        } else {
+            xSet = -1;
+        }
+    } else {
+        xSet = 1;
+        ySet = 1;
+        if (fileX < fileObj) {
+            xSet = -1;
+        }
+        if (y < obj.positionY) {
+            ySet = -1;
+        }
+    }
+    NewX = fileObj;
+    NewY = obj.positionY;
+    while (true) {
+        NewX += xSet;
+        NewY += ySet;
+        if ((NewX == fileX) && (NewY == y)) break;
+        if ((NewX < 1) || (NewX > 8) || (NewY < 1) || (NewY > 8)) break;
+        found = isOccupied(NewX, NewY);
+        if (found) break;
+    }
+    return (!found);
+}
+
+function knightMove(x, y, obj) {
+    var fileX = fileToIndex(x);
+    var fileObj = fileToIndex(obj.positionX);
+    return ((fileObj != fileX) && (obj.positionY != y) && (Math.abs(fileObj - fileX) + Math.abs(obj.positionY - y)) == 3);
+}
+
+function rookMove(x, y, obj) {
+    return ((obj.positionX == x) || (obj.positionY == y));
+}
+
+function bishopMove(x, y, obj) {
+    var fileX = fileToIndex(x);
+    var fileObj = fileToIndex(obj.positionX);
+    return (Math.abs(fileObj - fileX) == Math.abs(obj.positionY - y));
+}
+
+function queenMove(x, y, obj) {
+    return (bishopMove(x, y, obj) || rookMove(x, y, obj));
+}
+
+function kingMove(x, y, obj) {
+    var fileX = fileToIndex(x);
+    var fileObj = fileToIndex(obj.positionX);
+    return ((Math.abs(fileObj - fileX) <= 1) && (Math.abs(obj.positionY - y) <= 1));
+}
+
+function pawnMove(x, y, obj) {
+    var fileX = fileToIndex(x);
+    var fileObj = fileToIndex(obj.positionX);
+    return ((fileObj - fileX == 0) && (Math.abs(obj.positionY - y) <= 1));
+}
+
+function isInCheck(obj) {
+    var king = findKing(obj);
+    var found = false;
+    $.each(Game.pieces, function(index, element) {
+        if (obj.color != element.color) {
+            if (validMove(king.positionX, king.positionY, element)) {
+                found = true;
+            }
+        }
+    });
+    return found;
+}
+
+function findKing(obj) {
+    var found = false;
+    $.each(Game.pieces, function(index, element) {
+        if ((element.name == 'king') && (element.color == obj.color)) {
+            found = element;
+        }
+    });
+    return found;
 }
