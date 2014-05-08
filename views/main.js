@@ -46,7 +46,7 @@ function renderBoard() {
         $('.board').append('<div class="row ' + counter + '"></div>')
         _.each(Desk.x, _.bind(function(xCoordinate, yIndex) {
             $('.board ' + '.' + counter).append('<div class="' + xCoordinate + yCoordinate +'"></div>');
-            Game.cells.push({x:xCoordinate, y:yCoordinate, isOccupied:false});
+            Game.cells.push({x:xCoordinate, y:yCoordinate});
         }, this));
         ++counter;
     }, this));
@@ -82,7 +82,7 @@ function Piece(name, color, positionX, positionY, image, id) {
 
 //function initializePieces - initialized the pieces
 function initializePieces() {
-    var counter = 100;
+    var counter = 0;
     $.each(Game.cells, function(index, element) {
         var coordinate = element.x + element.y;
         switch (coordinate) {
@@ -90,34 +90,24 @@ function initializePieces() {
             case 'h1':
                 counter++;
                 Game.pieces.push(new Piece('rook', 'black', element.x, element.y, 'br', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'b1':
             case 'g1':
                 counter++;
                 Game.pieces.push(new Piece('knight', 'black', element.x, element.y, 'bn', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'c1':
             case 'f1':
                 counter++;
                 Game.pieces.push(new Piece('bishop', 'black', element.x, element.y, 'bb', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'd1':
                 counter++;
                 Game.pieces.push(new Piece('queen', 'black', element.x, element.y, 'bq', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'e1':
                 counter++;
                 Game.pieces.push(new Piece('king', 'black', element.x, element.y, 'bk', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'a2':
             case 'b2':
@@ -129,40 +119,29 @@ function initializePieces() {
             case 'h2':
                 counter++;
                 Game.pieces.push(new Piece('pawn', 'black', element.x, element.y, 'bp', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'a8':
             case 'h8':
                 counter++;
                 Game.pieces.push(new Piece('rook', 'white', element.x, element.y, 'wr', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'b8':
             case 'g8':
                 counter++;
                 Game.pieces.push(new Piece('knight', 'white', element.x, element.y, 'wn', counter));
-                element.isOccupied = true;
                 break;
             case 'c8':
             case 'f8':
                 counter++;
                 Game.pieces.push(new Piece('bishop', 'white', element.x, element.y, 'wb', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'd8':
                 counter++;
                 Game.pieces.push(new Piece('queen', 'white', element.x, element.y, 'wq', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'e8':
                 counter++;
                 Game.pieces.push(new Piece('king', 'white', element.x, element.y, 'wk', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
             case 'a7':
             case 'b7':
@@ -174,8 +153,6 @@ function initializePieces() {
             case 'h7':
                 counter++;
                 Game.pieces.push(new Piece('pawn', 'white', element.x, element.y, 'wp', counter));
-                element.isOccupied = true;
-                element.occupiedColor = 'black';
                 break;
         }
     });

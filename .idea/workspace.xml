@@ -26,7 +26,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="354" column="29" selection-start="12748" selection-end="12748" vertical-scroll-proportion="9.113114" vertical-offset="459" max-vertical-offset="8262">
+            <state line="89" column="22" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-9.422951" vertical-offset="7261" max-vertical-offset="7871">
               <folding />
             </state>
           </provider>
@@ -117,8 +117,8 @@
         <option value="$PROJECT_DIR$/../12. Chat/index.html" />
         <option value="$PROJECT_DIR$/chess.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/views/main.js" />
         <option value="$PROJECT_DIR$/chess.js" />
+        <option value="$PROJECT_DIR$/views/main.js" />
       </list>
     </option>
   </component>
@@ -420,7 +420,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="29" selection-start="12748" selection-end="12748" vertical-scroll-proportion="9.113114" vertical-offset="459" max-vertical-offset="8262">
+        <state line="89" column="22" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-9.422951" vertical-offset="7261" max-vertical-offset="7871">
           <folding />
         </state>
       </provider>
