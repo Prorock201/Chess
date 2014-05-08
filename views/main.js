@@ -1,10 +1,10 @@
 window.onload = startNewGame;
 
-var Img = '';
-var Turn = 'white';
-var Obj = '';
-var CurrentPosition = '';
-var CurrentCell = '';
+var PieceImg = '';
+var WhoseTurn = 'white';
+var SelectedPiece = '';
+var CurrentBoardPosition = '';
+var ShineCell = '';
 
 var Desk = {
     x: [],
@@ -16,19 +16,20 @@ var Game = {
     pieces: []
 };
 
+//function startNewGame - start new game
 function startNewGame() {
     initializeBoard();
     renderBoard();
     initializePieces();
     renderPieces();
-    drawFrame(true, false, 2);
-    drawFrame(true, true, 1);
-    drawFrame(false, false, 3);
-    drawFrame(false, true, 4);
-
+    drawGraticule(true, false, 2);
+    drawGraticule(true, true, 1);
+    drawGraticule(false, false, 3);
+    drawGraticule(false, true, 4);
     $('.row div').on('click', checkMoves);
 }
 
+//function initializeBoard - initialized the board
 function initializeBoard() {
     for (var j = 0; j < 8; j++) {
         Desk.x.push(String.fromCharCode(97 + j));
@@ -38,6 +39,7 @@ function initializeBoard() {
      }
 }
 
+//function renderBoard - draw the board
 function renderBoard() {
     var counter = 1;
     _.each(Desk.y, _.bind(function(yCoordinate, xIindex) {
@@ -50,7 +52,8 @@ function renderBoard() {
     }, this));
 }
 
-function drawFrame(before, letter, number) {
+//function drawGraticule - draw frame of graticule
+function drawGraticule(before, letter, number) {
     if (before) {
         $('.content-board').prepend('<div class="frame' + number + '"></div>');
     } else {
@@ -67,6 +70,7 @@ function drawFrame(before, letter, number) {
     }
 }
 
+//function Piece - Piece's constructor
 function Piece(name, color, positionX, positionY, image, id) {
     this.name = name;
     this.color = color;
@@ -76,6 +80,7 @@ function Piece(name, color, positionX, positionY, image, id) {
     this.id = id;
 }
 
+//function initializePieces - initialized the pieces
 function initializePieces() {
     var counter = 100;
     $.each(Game.cells, function(index, element) {
@@ -176,6 +181,7 @@ function initializePieces() {
     });
 }
 
+//function renderPieces - draw the pieces
 function renderPieces() {
     $('.row div').each(function(index, element) {
         $.each(Game.pieces, function(index2, element2) {
@@ -186,79 +192,100 @@ function renderPieces() {
     });
 }
 
+//function checkMoves - move pieces on board by mouse click
 function checkMoves(event) {
-    if (Obj) {
-        CurrentPosition = $(event.currentTarget).attr('class');
-        var oldX = Obj.positionX;
-        var oldY = Obj.positionY;
-        var newX = CurrentPosition.substring(0,1);
-        var newY = parseInt(CurrentPosition.substring(1,2));
-        if (Img) {
-            if (Obj.color == Turn) {
-                if (validMove(newX, newY, Obj)) {
-                    console.log('Yes');
-                    var found = isOccupied(newX, newY);
+    //is a piece selected
+    if (SelectedPiece) {
+        CurrentBoardPosition = $(event.currentTarget).attr('class');
+        var originPositionX = SelectedPiece.positionX;
+        var originPositionY = SelectedPiece.positionY;
+        var targetPositionX = CurrentBoardPosition.substring(0,1);
+        var targetPositionY = parseInt(CurrentBoardPosition.substring(1,2));
+        //is your turn
+        if (SelectedPiece.color == WhoseTurn) {
+            //check if piece can do this move
+            if (validMove(targetPositionX, targetPositionY, SelectedPiece)) {
+                //check if piece kill another
+                var found = isOccupied(targetPositionX, targetPositionY);
+                if (found) {
                     var deletePiece;
-                    if (found) {
-                        $('.' + found.positionX + found.positionY).contents().remove();
-                        $.each(Game.pieces, function(index, element) {
-                            if (found.id == element.id) {
-                                deletePiece = index;
-                            }
-                        });
-                        Game.pieces.splice(deletePiece, 1);
-                    }
-                    Obj.positionX = newX;
-                    Obj.positionY = newY;
-                    if (isInCheck(Obj)) {
-                        $('.info').text('Cannot move there...You would be in check.');
-                        Obj.positionX = oldX;
-                        Obj.positionY = oldY;
-                    } else {
-                        $('.info').text('Move ' + Obj.color + ' ' + Obj.name + ' to ' + newX + newY);
-                        $(event.currentTarget).append(Img);
-                        $('.row div').each(function(index, element) {
-                            if ($(element).hasClass('pickUp')) {
-                                $(element).removeClass('pickUp');
-                                $(element).contents().remove();
-                            }
-                        });
-                        if (Turn == 'white') {
-                            Turn = 'black';
-                        } else {
-                            Turn = 'white';
+                    $('.' + found.positionX + found.positionY).contents().remove();
+                    $.each(Game.pieces, function(index, element) {
+                        if (found.id == element.id) {
+                            deletePiece = index;
                         }
-                    }
-                } else {
-                    $('.info').text('Illegal move..Please try again.');
+                    });
+                    Game.pieces.splice(deletePiece, 1);
                 }
+                SelectedPiece.positionX = targetPositionX;
+                SelectedPiece.positionY = targetPositionY;
+                //is your king in Check after move
+                if (isInCheck(SelectedPiece)) {
+                    $('.info').text('Cannot move there...You would be in check.');
+                    SelectedPiece.positionX = originPositionX;
+                    SelectedPiece.positionY = originPositionY;
+                //move piece to new position
+                } else {
+                    $('.info').text('Move ' + SelectedPiece.color + ' ' + SelectedPiece.name + ' to ' + targetPositionX + targetPositionY);
+                    $(event.currentTarget).append(PieceImg);
+                    $('.row div').each(function(index, element) {
+                        if ($(element).hasClass('pickUp')) {
+                            $(element).removeClass('pickUp');
+                            $(element).contents().remove();
+                        }
+                    });
+                    //change turn
+                    if (WhoseTurn == 'white') {
+                        WhoseTurn = 'black';
+                    } else {
+                        WhoseTurn = 'white';
+                    }
+                }
+            //wrong move
             } else {
-                $('.info').text('It is ' + Turn + ' turn.');
+                $('.info').text('Illegal move..Please try again.');
             }
-            Img = null;
+        //not your turn
+        } else {
+            $('.info').text('It is ' + WhoseTurn + ' turn.');
         }
-        $(CurrentCell).removeClass('pickUp');
-        Obj = null;
+        $(ShineCell).removeClass('pickUp');
+        PieceImg = null;
+        SelectedPiece = null;
+    //there is no selected piece
     } else {
+        //is a piece's image in the selected cell
         if ($(event.currentTarget).children().is('img')) {
-            CurrentPosition = $(event.currentTarget).attr('class');
-            Img = $(event.currentTarget).find('img').clone();
+            //change info-text when piece selected
+            if ($('.info').text() == 'Pick up a piece please.') {
+                $('.info').text('');
+            }
+            CurrentBoardPosition = $(event.currentTarget).attr('class');
+            PieceImg = $(event.currentTarget).find('img').clone();
             $('.row div').each(function(index, element) {
                 if ($(element).hasClass('pickUp')) {
                     $(element).removeClass('pickUp');
                 }
-                CurrentCell = event.currentTarget;
-                $(CurrentCell).addClass('pickUp');
+                ShineCell = event.currentTarget;
+                $(ShineCell).addClass('pickUp');
             });
             $.each(Game.pieces, function(index, element) {
-                if (CurrentPosition == this.positionX + this.positionY) {
-                    Obj = element;
+                if (CurrentBoardPosition == element.positionX + element.positionY) {
+                    SelectedPiece = element;
                 }
             });
+        //change info-text if there is not piece and cell is empty
+        } else {
+            $('.info').text('Pick up a piece please.');
         }
     }
 }
 
+//function validMove - checks to see if the piece make a move
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Can do this move?
 function validMove(x, y, obj) {
     var found = isOccupied(x, y);
     if (found.color == obj.color) {
@@ -275,119 +302,158 @@ function validMove(x, y, obj) {
         return kingMove(x, y, obj) && clear(x, y, obj);
     } else if (obj.name == 'pawn') {
         return pawnMove(x, y, obj);
-    } else {
-        $('.info').text('Unknown type: ' + obj.name);
     }
 }
 
+//function isOccupied - checks to see if enemy piece on target cell
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@returns - Boolean - Was find enemy piece?
 function isOccupied(x, y) {
     var found = false;
     if (typeof(x) == 'number') {
-        x = indexToFile(x);
+        x = convertValue(x);
     }
     $.each(Game.pieces, function(index, element) {
-        if (this.positionX == x && this.positionY == y) {
+        if (element.positionX == x && element.positionY == y) {
             found = element;
         }
     });
     return found;
 }
 
-function fileToIndex(x) {
-    var num;
-    $(Desk.x).each(function(index, element){
-        if (x == element) {
-            num = index + 1;
-        }
-    });
-    return num;
+//function convertValue - converts the number to a string and back
+//@param x - String or Number - target x-position on board
+//@returns - String or Number - convertible value
+function convertValue(x) {
+    var value;
+    if (typeof(x) == 'string') {
+        $(Desk.x).each(function(index, element){
+            if (x == element) {
+                value = index + 1;
+            }
+        });
+    } else {
+        $(Desk.x).each(function(index, element){
+            if (x == index + 1) {
+                value = element;
+            }
+        });
+    }
+    return value;
 }
 
-function indexToFile(x) {
-    var letter;
-    $(Desk.x).each(function(index, element){
-        if (x == index + 1) {
-            letter = element;
-        }
-    });
-    return letter;
-}
-
+//function clear - checks cells are occupied on the way to the goal
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Was clear?
 function clear(x, y, obj) {
-    var xSet = 0;
-    var ySet = 0;
-    var NewX;
-    var NewY;
-    var fileX = fileToIndex(x);
-    var fileObj = fileToIndex(obj.positionX);
+    var xStep = 0;
+    var yStep = 0;
+    var newX = obj.positionX;
+    var newY = obj.positionY;
     var found = false;
-    if (fileX == fileObj) {
+    x = convertValue(x);
+    obj.positionX = convertValue(obj.positionX);
+    if (x == obj.positionX) {
         if (y > obj.positionY) {
-            ySet = 1;
+            yStep = 1;
         } else {
-            ySet = -1;
+            yStep = -1;
         }
     } else if (y == obj.positionY) {
-        if (fileX > fileObj) {
-            xSet = 1;
+        if (x > obj.positionX) {
+            xStep = 1;
         } else {
-            xSet = -1;
+            xStep = -1;
         }
     } else {
-        xSet = 1;
-        ySet = 1;
-        if (fileX < fileObj) {
-            xSet = -1;
+        xStep = 1;
+        yStep = 1;
+        if (x < obj.positionX) {
+            xStep = -1;
         }
         if (y < obj.positionY) {
-            ySet = -1;
+            yStep = -1;
         }
     }
-    NewX = fileObj;
-    NewY = obj.positionY;
     while (true) {
-        NewX += xSet;
-        NewY += ySet;
-        if ((NewX == fileX) && (NewY == y)) break;
-        if ((NewX < 1) || (NewX > 8) || (NewY < 1) || (NewY > 8)) break;
-        found = isOccupied(NewX, NewY);
+        newX += xStep;
+        newY += yStep;
+        if ((newX == x) && (newY == y)) break;
+        if ((newX < 1) || (newX > 8) || (newY < 1) || (newY > 8)) break;
+        found = isOccupied(newX, newY);
         if (found) break;
     }
     return (!found);
 }
 
+//function knightMove - checks knight's avaliable move
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Can knight do this move?
 function knightMove(x, y, obj) {
-    var fileX = fileToIndex(x);
-    var fileObj = fileToIndex(obj.positionX);
+    var fileX = convertValue(x);
+    var fileObj = convertValue(obj.positionX);
     return ((fileObj != fileX) && (obj.positionY != y) && (Math.abs(fileObj - fileX) + Math.abs(obj.positionY - y)) == 3);
 }
 
+//function rookMove - checks rook's available move
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Can rook do this move?
 function rookMove(x, y, obj) {
     return ((obj.positionX == x) || (obj.positionY == y));
 }
 
+//function bishopMove - checks bishop's available move
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Can bishop do this move?
 function bishopMove(x, y, obj) {
-    var fileX = fileToIndex(x);
-    var fileObj = fileToIndex(obj.positionX);
+    var fileX = convertValue(x);
+    var fileObj = convertValue(obj.positionX);
     return (Math.abs(fileObj - fileX) == Math.abs(obj.positionY - y));
 }
 
+//function queenMove - checks queen's available move
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Can queen do this move?
 function queenMove(x, y, obj) {
     return (bishopMove(x, y, obj) || rookMove(x, y, obj));
 }
 
+//function kingMove - checks king's available move
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Can king do this move?
 function kingMove(x, y, obj) {
-    var fileX = fileToIndex(x);
-    var fileObj = fileToIndex(obj.positionX);
+    var fileX = convertValue(x);
+    var fileObj = convertValue(obj.positionX);
     return ((Math.abs(fileObj - fileX) <= 1) && (Math.abs(obj.positionY - y) <= 1));
 }
 
+//function pawnMove - checks pawn's available move
+//@param x - String - target x-position on board
+//@param y - Number - target y-position on board
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Can pawn do this move?
 function pawnMove(x, y, obj) {
-    var fileX = fileToIndex(x);
-    var fileObj = fileToIndex(obj.positionX);
+    var fileX = convertValue(x);
+    var fileObj = convertValue(obj.positionX);
     return ((fileObj - fileX == 0) && (Math.abs(obj.positionY - y) <= 1));
 }
 
+//function isInCheck - find the piece that can kill your king after move
+//@param obj - Object - piece that will make a move
+//@returns - Boolean - Is your king under attack?
 function isInCheck(obj) {
     var king = findKing(obj);
     var found = false;
@@ -401,6 +467,9 @@ function isInCheck(obj) {
     return found;
 }
 
+//function findKing - find king's piece on the board
+//@param obj - Object - piece that will make a move
+//@returns - Object - king
 function findKing(obj) {
     var found = false;
     $.each(Game.pieces, function(index, element) {

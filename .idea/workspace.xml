@@ -22,104 +22,80 @@
     <favorites_list name="10. Chess" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5880503">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="chess.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chess.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="17" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1632">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="1.0408163" vertical-offset="0" max-vertical-offset="425">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="lodash.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/libs/lodash.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6782" column="19" selection-start="261419" selection-end="261419" vertical-scroll-proportion="0.0" vertical-offset="115294" max-vertical-offset="115430">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="chess.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chess.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="25" selection-start="983" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="2312">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="411" column="1" selection-start="13032" selection-end="13032" vertical-scroll-proportion="0.0" vertical-offset="3823" max-vertical-offset="7089">
-                  <folding>
-                    <marker date="1399384749750" expanded="true" signature="237:324" placeholder="{...}" />
-                    <marker date="1399384749750" expanded="true" signature="9305:9324" placeholder="/*...*/" />
-                    <marker date="1399384749750" expanded="true" signature="9363:9766" placeholder="{...}" />
-                    <marker date="1399384749750" expanded="true" signature="9407:9760" placeholder="/*...*/" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="require.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/libs/require.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2067" column="9" selection-start="82266" selection-end="82266" vertical-scroll-proportion="0.0" vertical-offset="35139" max-vertical-offset="35241">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="text_require.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/libs/text_require.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="385" column="3" selection-start="15349" selection-end="15349" vertical-scroll-proportion="0.0" vertical-offset="6545" max-vertical-offset="6647">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="29" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="201" column="0" selection-start="6596" selection-end="6596" vertical-scroll-proportion="-17.72619" vertical-offset="4906" max-vertical-offset="7089">
-                  <folding>
-                    <marker date="1399384749750" expanded="true" signature="237:324" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="354" column="29" selection-start="12748" selection-end="12748" vertical-scroll-proportion="9.113114" vertical-offset="459" max-vertical-offset="8262">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chess.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chess.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="17" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1632">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="7" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lodash.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/lodash.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6782" column="19" selection-start="261419" selection-end="261419" vertical-scroll-proportion="0.0" vertical-offset="115193" max-vertical-offset="115430">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chess.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chess.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="8313">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="require.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/require.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2067" column="9" selection-start="82266" selection-end="82266" vertical-scroll-proportion="0.0" vertical-offset="35004" max-vertical-offset="35241">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_require.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/text_require.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="385" column="3" selection-start="15349" selection-end="15349" vertical-scroll-proportion="0.0" vertical-offset="6410" max-vertical-offset="6647">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="29" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -129,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/chess.js" />
         <option value="$PROJECT_DIR$/chess.html" />
         <option value="$PROJECT_DIR$/templates/board.html" />
         <option value="$PROJECT_DIR$/templates/piece.html" />
@@ -141,16 +116,17 @@
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/../12. Chat/index.html" />
         <option value="$PROJECT_DIR$/chess.css" />
-        <option value="$PROJECT_DIR$/views/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/views/main.js" />
+        <option value="$PROJECT_DIR$/chess.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
-    <option name="width" value="648" />
-    <option name="height" value="463" />
+    <option name="width" value="1288" />
+    <option name="height" value="783" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -178,7 +154,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,6 +202,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,14 +285,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="648" height="463" extended-state="6" />
+    <frame x="-4" y="-4" width="1288" height="783" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3273906" sideWeight="0.672956" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11694511" sideWeight="0.672956" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -353,12 +329,7 @@
     <entry file="file://$PROJECT_DIR$/views/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="13" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1139">
-          <folding>
-            <marker date="1399384749750" expanded="true" signature="237:324" placeholder="{...}" />
-            <marker date="1399384749750" expanded="true" signature="9305:9324" placeholder="/*...*/" />
-            <marker date="1399384749750" expanded="true" signature="9363:9766" placeholder="{...}" />
-            <marker date="1399384749750" expanded="true" signature="9407:9760" placeholder="/*...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -388,6 +359,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../12. Chat/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.22972973" vertical-offset="51" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="998" column="0" selection-start="15758" selection-end="15758" vertical-scroll-proportion="0.33231708" vertical-offset="16857" max-vertical-offset="64651" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chess.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="7" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/lodash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6782" column="19" selection-start="261419" selection-end="261419" vertical-scroll-proportion="0.0" vertical-offset="114752" max-vertical-offset="115430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libs/require.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2067" column="9" selection-start="82266" selection-end="82266" vertical-scroll-proportion="0.0" vertical-offset="34925" max-vertical-offset="35241">
@@ -402,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/lodash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6782" column="19" selection-start="261419" selection-end="261419" vertical-scroll-proportion="0.0" vertical-offset="114752" max-vertical-offset="115430">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="29" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="272">
@@ -416,45 +411,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../12. Chat/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.22972973" vertical-offset="51" max-vertical-offset="510" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chess.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="25" selection-start="983" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="2312">
+        <state line="30" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="8313">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="998" column="0" selection-start="15758" selection-end="15758" vertical-scroll-proportion="0.33231708" vertical-offset="16857" max-vertical-offset="64651" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="411" column="1" selection-start="13032" selection-end="13032" vertical-scroll-proportion="0.0" vertical-offset="3823" max-vertical-offset="7089">
-          <folding>
-            <marker date="1399384749750" expanded="true" signature="237:324" placeholder="{...}" />
-            <marker date="1399384749750" expanded="true" signature="9305:9324" placeholder="/*...*/" />
-            <marker date="1399384749750" expanded="true" signature="9363:9766" placeholder="{...}" />
-            <marker date="1399384749750" expanded="true" signature="9407:9760" placeholder="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chess.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="1.0408163" vertical-offset="0" max-vertical-offset="425">
+        <state line="354" column="29" selection-start="12748" selection-end="12748" vertical-scroll-proportion="9.113114" vertical-offset="459" max-vertical-offset="8262">
           <folding />
         </state>
       </provider>
