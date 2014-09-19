@@ -328,9 +328,9 @@ function convertValue(x) {
 function clear(x, y, obj) {
     var xStep = 0;
     var yStep = 0;
-    var newX = obj.positionX;
-    var newY = obj.positionY;
     var found = false;
+    var newX;
+    var newY;
     x = convertValue(x);
     obj.positionX = convertValue(obj.positionX);
     if (x == obj.positionX) {
@@ -355,6 +355,8 @@ function clear(x, y, obj) {
             yStep = -1;
         }
     }
+    newX = obj.positionX;
+    newY = obj.positionY;
     while (true) {
         newX += xStep;
         newY += yStep;
@@ -363,6 +365,8 @@ function clear(x, y, obj) {
         found = isOccupied(newX, newY);
         if (found) break;
     }
+    x = convertValue(x);
+    obj.positionX = convertValue(obj.positionX);
     return (!found);
 }
 
@@ -423,9 +427,17 @@ function kingMove(x, y, obj) {
 //@param obj - Object - piece that will make a move
 //@returns - Boolean - Can pawn do this move?
 function pawnMove(x, y, obj) {
+    var found = isOccupied(x, y);
     var fileX = convertValue(x);
     var fileObj = convertValue(obj.positionX);
-    return ((fileObj - fileX == 0) && (Math.abs(obj.positionY - y) <= 1));
+    /*return ((fileObj - fileX == 0) && (Math.abs(obj.positionY - y) <= 1));*/
+    if (obj.color == "white") {
+        if (found &&)
+        return ((fileObj - fileX == 0) && ((obj.positionY - y) == 1));
+    } else {
+        return ((fileObj - fileX == 0) && ((y - obj.positionY) == 1));
+    }
+
 }
 
 //function isInCheck - find the piece that can kill your king after move
