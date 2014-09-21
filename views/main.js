@@ -430,14 +430,19 @@ function pawnMove(x, y, obj) {
     var found = isOccupied(x, y);
     var fileX = convertValue(x);
     var fileObj = convertValue(obj.positionX);
-    /*return ((fileObj - fileX == 0) && (Math.abs(obj.positionY - y) <= 1));*/
     if (obj.color == "white") {
-        if (found &&)
-        return ((fileObj - fileX == 0) && ((obj.positionY - y) == 1));
+        if (found && (Math.abs(fileObj - fileX) == 1) && ((obj.positionY - y) == 1)) {
+            return true;
+        } else {
+            return (!found && (fileObj - fileX == 0) && ((obj.positionY - y) == 1));
+        }
     } else {
-        return ((fileObj - fileX == 0) && ((y - obj.positionY) == 1));
+        if (found && (Math.abs(fileObj - fileX) == 1) && ((obj.positionY - y) == -1)) {
+            return true;
+        } else {
+            return (!found && (fileObj - fileX == 0) && ((obj.positionY - y) == -1));
+        }
     }
-
 }
 
 //function isInCheck - find the piece that can kill your king after move
